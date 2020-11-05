@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@types/node": "^14.14.6",
     "pg-promise": "^10.7.3",
+    "prompt": "^1.0.0",
+    "readline-sync": "^1.4.10",
     "tsc": "^1.20150623.0"
   },
   "devDependencies": {},
