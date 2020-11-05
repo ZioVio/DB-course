@@ -3,7 +3,7 @@ import BaseFilters, { IFilters } from "./baseFilters";
 import SQLParameters from "./sqlParameters";
 
 
-interface IProductFilters {
+export interface IProductFilters {
   id?: string;
   name?: string;
   category?: string;
@@ -19,7 +19,7 @@ export default class ProductFilters extends BaseFilters {
     super();
   }
 
-  getSQLConditionsAndParameters(): SQLParameters {
+  getSQLConditionsAndValues(): SQLParameters {
     const filters = this.filters;
     const fieldsWithOperators: [ string, string, string? ][] = [];
     const values: any[] = [];
@@ -28,8 +28,8 @@ export default class ProductFilters extends BaseFilters {
       values.push(filters.id);
     }
     if (filters.name != null) {
-      fieldsWithOperators.push(['name', 'LIKE', '%{}%']);
-      values.push(filters.name);
+      fieldsWithOperators.push(['name', 'LIKE']);
+      values.push('%' + filters.name + '%');
     }
     if (filters.category != null) {
       fieldsWithOperators.push(['category', '==']);

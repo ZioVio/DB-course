@@ -5,13 +5,10 @@ import { BaseStorage } from './baseStorage';
 
 class OrdersStorage extends BaseStorage {
   public async get(filters: OrderFilters): Promise<Order[]> {
-    const { sql, values } = filters.getSQLConditionsAndParameters();
-    return this.db.any(`SELECT * FROM orders WHERE ${sql}`, values);
+    const { sql, values } = filters.getSQLConditionsAndValues();
+    const query = `SELECT * FROM orders ${sql.length ? 'WHERE' : ''} ${sql}`;
+    return db.any(query, values)
   }
-
-  // public update(filters: OrderFilters, order: Order): Promise<Order> {
-  //   return this.db.any()
-  // }
 }
 
-export default new OrdersStorage(db);
+export default new OrdersStorage();

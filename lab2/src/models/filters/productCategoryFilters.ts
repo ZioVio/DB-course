@@ -2,7 +2,7 @@ import mapper from '../../utils/mapFieldsWithOperators';
 import BaseFilters from "./baseFilters";
 import SQLParameters from "./sqlParameters";
 
-interface IProductCategoryFilters {
+export interface IProductCategoryFilters {
   id?: string;
   name?: string;
 }
@@ -13,7 +13,7 @@ export default class ProductCategoryFilters extends BaseFilters {
     super();
   }
 
-  getSQLConditionsAndParameters(): SQLParameters {
+  getSQLConditionsAndValues(): SQLParameters {
     const filters = this.filters;
     const fieldsWithOperators: [ string, string, string? ][] = [];
     const values: any[] = [];

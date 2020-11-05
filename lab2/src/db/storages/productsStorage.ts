@@ -6,9 +6,10 @@ import { BaseStorage } from './baseStorage';
 class ProductsStorage extends BaseStorage {
 
   public get(filters: ProductFilters): Promise<Product[]> {
-    const { sql, values } = filters.getSQLConditionsAndParameters();
-    return this.db.any(`SELECT * FROM products WHERE ${sql}`, values);
+    const { sql, values } = filters.getSQLConditionsAndValues();
+    const query = `SELECT * FROM products ${sql.length ? 'WHERE' : ''} ${sql}`;
+    return db.any(query, values);
   }
 }
 
-export default new ProductsStorage(db);
+export default new ProductsStorage();

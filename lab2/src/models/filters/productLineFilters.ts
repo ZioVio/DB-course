@@ -2,7 +2,7 @@ import mapper from '../../utils/mapFieldsWithOperators';
 import BaseFilters from "./baseFilters";
 import SQLParameters from "./sqlParameters";
 
-interface IProductLinesFilters {
+export interface IProductLinesFilters {
   id?: string;
   name?: string;
 }
@@ -13,7 +13,7 @@ export default class ProductLinesFilters extends BaseFilters {
     super();
   }
 
-  getSQLConditionsAndParameters(): SQLParameters {
+  getSQLConditionsAndValues(): SQLParameters {
     const filters = this.filters;
     const fieldsWithOperators: [ string, string, string? ][] = [];
     const values: any[] = [];
@@ -22,8 +22,8 @@ export default class ProductLinesFilters extends BaseFilters {
       values.push(filters.id);
     }
     if (filters.name != null) {
-      fieldsWithOperators.push(['name', 'LIKE', '%{}%']);
-      values.push(filters.name);
+      fieldsWithOperators.push(['name', 'LIKE']);
+      values.push('%' + filters.name + '%');
     }
 
     const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators);

@@ -1,9 +1,10 @@
 import mapper from '../../utils/mapFieldsWithOperators';
 import BaseFilters, { IFilters } from "./baseFilters";
-import SQLParameters from "./sqlParameters";
+import SQL from 'sql-template-strings';
+import SQLParameters from './sqlParameters';
 
 
-interface IUserFilters {
+export interface IUserFilters {
   id?: string;
   firstName?: string;
   lastName?: string;
@@ -18,7 +19,7 @@ export default class UserFilters extends BaseFilters {
     super();
   }
 
-  getSQLConditionsAndParameters(): SQLParameters {
+  public getSQLConditionsAndValues(): SQLParameters {
     const filters = this.filters;
     const fieldsWithOperators: [ string, string, string? ][] = [];
     const values: any[] = [];
@@ -27,16 +28,16 @@ export default class UserFilters extends BaseFilters {
       values.push(filters.id);
     }
     if (filters.firstName != null) {
-      fieldsWithOperators.push(['first_name', 'LIKE', '%{}%']);
-      values.push(filters.firstName);
+      fieldsWithOperators.push(['first_name', 'LIKE']);
+      values.push('%' + filters.firstName + '%');
     }
     if (filters.lastName != null) {
-      fieldsWithOperators.push(['last_name', 'LIKE', '%{}%']);
-      values.push(filters.lastName);
+      fieldsWithOperators.push(['last_name', 'LIKE']);
+      values.push('%' + filters.lastName + '%');
     }
     if (filters.email != null) {
-      fieldsWithOperators.push(['email', 'LIKE', '%{}%']);
-      values.push(filters.email);
+      fieldsWithOperators.push(['email', 'LIKE']);
+      values.push('%' + filters.email+ '%');
     }
     if (filters.phoneNumber != null) {
       fieldsWithOperators.push(['phone_number', '==']);

@@ -6,9 +6,10 @@ import { BaseStorage } from './baseStorage';
 class UsersStorage extends BaseStorage {
 
   public get(filters: UserFilters): Promise<User[]> {
-    const { sql, values } = filters.getSQLConditionsAndParameters();
-    return this.db.any(`SELECT * FROM users WHERE ${sql}`, values);
+    const { sql, values } = filters.getSQLConditionsAndValues();
+    const query = `SELECT * FROM users ${sql.length ? 'WHERE' : ''} ${sql}`;
+    return db.any(query, values)
   }
 }
 
-export default new UsersStorage(db);
+export default new UsersStorage();

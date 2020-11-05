@@ -2,7 +2,7 @@ import mapper from '../../utils/mapFieldsWithOperators';
 import BaseFilters, { IFilters } from "./baseFilters";
 import SQLParameters from "./sqlParameters";
 
-interface IOrderFilters extends IFilters {
+export interface IOrderFilters extends IFilters {
   id?: string;
   userId?: string;
   totalPriceFrom?: number;
@@ -16,7 +16,7 @@ export default class OrderFilters extends BaseFilters {
     super();
   }
 
-  getSQLConditionsAndParameters(): SQLParameters {
+  getSQLConditionsAndValues(): SQLParameters {
     const filters = this.filters;
     const fieldsWithOperators: [ string, string, string? ][] = [];
     const values: any[] = [];
@@ -29,8 +29,8 @@ export default class OrderFilters extends BaseFilters {
       values.push(filters.userId);
     }
     if (filters.comment != null) {
-      fieldsWithOperators.push(['comment', 'LIKE', '%{}%']);
-      values.push(filters.comment);
+      fieldsWithOperators.push(['comment', 'LIKE']);
+      values.push('%' + filters.comment + '%');
     }
     if (filters.totalPriceFrom != null) {
       fieldsWithOperators.push(['total_price', '>=']);
