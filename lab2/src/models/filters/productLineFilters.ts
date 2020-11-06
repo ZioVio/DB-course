@@ -1,5 +1,6 @@
 import mapper from '../../utils/mapFieldsWithOperators';
-import BaseFilters from "./baseFilters";
+import BaseFilters, { SQLConditionsParams } from "./baseFilters";
+import { areFiltersEmpty } from './baseFilters';
 import SQLParameters from "./sqlParameters";
 
 export interface IProductLinesFilters {
@@ -13,7 +14,11 @@ export default class ProductLinesFilters extends BaseFilters {
     super();
   }
 
-  getSQLConditionsAndValues(): SQLParameters {
+  isEmpty(): boolean {
+    return areFiltersEmpty(this.filters);
+  }
+
+  getSQLConditionsAndValues({ startValueIndex = 1, separator = ' AND ' } = {}): SQLParameters {
     const filters = this.filters;
     const fieldsWithOperators: [ string, string, string? ][] = [];
     const values: any[] = [];
@@ -26,7 +31,21 @@ export default class ProductLinesFilters extends BaseFilters {
       values.push('%' + filters.name + '%');
     }
 
-    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators);
+    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
+    return { sql, values };
+  }
+
+  getSQLSettingValues({ startValueIndex = 1, separator = ' , ' } = {}): SQLParameters {
+    const filters = this.filters;
+    const fieldsWithOperators: [ string, string, string? ][] = [];
+    const values: any[] = [];
+
+    if (filters.name != null) {
+      fieldsWithOperators.push(['name', '=']);
+      values.push(filters.name);
+    }
+
+    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
     return { sql, values };
   }
 }

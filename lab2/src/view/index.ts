@@ -1,4 +1,3 @@
-import { IUserFilters } from './../models/filters/userFilters';
 import readLine from 'readline';
 import minimist from 'minimist';
 
@@ -26,21 +25,43 @@ class UI {
           return console.log('Invalid method or entity');
         }
         const parsedArgs = minimist(filters);
+        const controllers = this.getControllers(entity);
+        if (!controllers) {
+          return console.log('Invalid method or entity');
+        }
         switch (method.toUpperCase()) {
-          case 'GET': this.onGet(entity, parsedArgs);
+          case 'GET': this.onGet(controllers, parsedArgs); break;
+          case 'DELETE': this.onDelete(controllers, parsedArgs); break;
+          case 'UPDATE': this.onUpdate(controllers, parsedArgs._[0], parsedArgs); break;
+          default: this.onInvalid();
         }
       }
     );
   }
 
-  private onGet(entity, filters) {
-    const controllers = this.getControllers(entity);
-    if (!controllers) {
-      return console.log('Invalid method or entity');
-    }
+  private onGet(controllers, filters) {
     controllers.onGet(filters).then(result => {
       console.log(result)
     });
+  }
+
+  private onDelete(controllers, filters) {
+    controllers.onDelete(filters).then(result => {
+      console.log(result)
+    });
+  }
+
+  private onUpdate(controllers, id: string, filters) {
+    if (!id) {
+      return console.log('Should provide id to update');
+    }
+    controllers.onUpdate(id, filters).then(result => {
+      console.log(result);
+    });
+  }
+
+  private onInvalid() {
+    console.log('Invalid method');
   }
 
   private checkEntity(e: string): boolean {

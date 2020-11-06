@@ -1,5 +1,6 @@
 import mapper from '../../utils/mapFieldsWithOperators';
-import BaseFilters, { IFilters } from "./baseFilters";
+import BaseFilters, { IFilters, SQLConditionsParams } from "./baseFilters";
+import { areFiltersEmpty } from './baseFilters';
 import SQLParameters from "./sqlParameters";
 
 
@@ -8,23 +9,27 @@ export interface IProductFilters {
   name?: string;
   category?: string;
   line?: string;
+  price?: number;
   priceFrom?: number;
   priceTo?: number;
 }
 
 
 export default class ProductFilters extends BaseFilters {
-
   constructor(private filters: IProductFilters) {
     super();
   }
 
-  getSQLConditionsAndValues(): SQLParameters {
+  isEmpty(): boolean {
+    return areFiltersEmpty(this.filters);
+  }
+
+  getSQLConditionsAndValues({ startValueIndex = 1, separator = ' AND ' } = {}): SQLParameters {
     const filters = this.filters;
     const fieldsWithOperators: [ string, string, string? ][] = [];
     const values: any[] = [];
     if (filters.id != null) {
-      fieldsWithOperators.push(['id', '==']);
+      fieldsWithOperators.push(['id', '=']);
       values.push(filters.id);
     }
     if (filters.name != null) {
@@ -32,23 +37,48 @@ export default class ProductFilters extends BaseFilters {
       values.push('%' + filters.name + '%');
     }
     if (filters.category != null) {
-      fieldsWithOperators.push(['category', '==']);
+      fieldsWithOperators.push(['category', '=']);
       values.push(filters.category);
     }
     if (filters.line != null) {
-      fieldsWithOperators.push(['line', '==']);
+      fieldsWithOperators.push(['line', '=']);
       values.push(filters.line);
     }
     if (filters.priceFrom != null) {
-      fieldsWithOperators.push(['total_price', '>=']);
+      fieldsWithOperators.push(['price', '>=']);
       values.push(filters.priceFrom);
     }
     if (filters.priceTo != null) {
-      fieldsWithOperators.push(['total_price', '<=']);
+      fieldsWithOperators.push(['price', '<=']);
       values.push(filters.priceTo);
     }
 
-    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators);
+    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
+    return { sql, values };
+  }
+
+  getSQLSettingValues({ startValueIndex = 1, separator = ' , ' } = {}): SQLParameters {
+    const filters = this.filters;
+    const fieldsWithOperators: [ string, string, string? ][] = [];
+    const values: any[] = [];
+    if (filters.name != null) {
+      fieldsWithOperators.push(['name', '=']);
+      values.push(filters.name);
+    }
+    if (filters.category != null) {
+      fieldsWithOperators.push(['category', '=']);
+      values.push(filters.category);
+    }
+    if (filters.line != null) {
+      fieldsWithOperators.push(['line', '=']);
+      values.push(filters.line);
+    }
+    if (filters.price != null) {
+      fieldsWithOperators.push(['price', '=']);
+      values.push(filters.priceFrom);
+    }
+
+    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
     return { sql, values };
   }
 }

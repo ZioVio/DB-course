@@ -18,6 +18,42 @@ const onGet = async (_filters: IProductLinesFilters): Promise<string> => {
   }
 };
 
+const onDelete = async (_filters: IProductLinesFilters): Promise<string> => {
+  const validationErrors = validateFilters(_filters);
+  if (validationErrors.length) {
+    return validationErrors.join('\n');
+  }
+  const filters = new ProductLinesFilters(_filters);
+  if (filters.isEmpty()) {
+    return 'Cannot delete without filters';
+  }
+  try {
+    await productLinesStorage.delete(filters);
+    return 'Successfully deleted';
+  } catch (err) {
+    return err.message;
+  }
+};
+
+const onUpdate = async (id: string, updateFields: IProductLinesFilters): Promise<string> => {
+  const validationErrors = validateFilters(updateFields);
+  if (validationErrors.length) {
+    return validationErrors.join('\n');
+  }
+  delete updateFields['_'];
+  const filters = new ProductLinesFilters(updateFields);
+  if (filters.isEmpty()) {
+    return 'Cannot update without filters';
+  }
+  try {
+    const idFilter = new ProductLinesFilters({ id });
+    await productLinesStorage.update(idFilter, filters);
+    return 'Successfully update';
+  } catch (err) {
+    return err.message;
+  }
+};
+
 const validateFilters = (filters: IProductLinesFilters): string[] => {
   const errors: string[] = [];
   if (filters.id && !validators.isString(filters.id)) {
@@ -30,5 +66,5 @@ const validateFilters = (filters: IProductLinesFilters): string[] => {
 };
 
 export default {
-  onGet
+  onGet, onDelete, onUpdate
 }

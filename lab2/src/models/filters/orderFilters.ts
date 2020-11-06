@@ -1,5 +1,5 @@
 import mapper from '../../utils/mapFieldsWithOperators';
-import BaseFilters, { IFilters } from "./baseFilters";
+import BaseFilters, { areFiltersEmpty, IFilters } from "./baseFilters";
 import SQLParameters from "./sqlParameters";
 
 export interface IOrderFilters extends IFilters {
@@ -7,6 +7,8 @@ export interface IOrderFilters extends IFilters {
   userId?: string;
   totalPriceFrom?: number;
   totalPriceTo?: number;
+  // used only in updating
+  totalPrice?: number;
   comment?: string;
 }
 
@@ -16,16 +18,20 @@ export default class OrderFilters extends BaseFilters {
     super();
   }
 
-  getSQLConditionsAndValues(): SQLParameters {
+  isEmpty(): boolean {
+    return areFiltersEmpty(this.filters);
+  }
+
+  getSQLConditionsAndValues({ startValueIndex = 1, separator = ' AND ' } = {}): SQLParameters {
     const filters = this.filters;
-    const fieldsWithOperators: [ string, string, string? ][] = [];
+    const fieldsWithOperators: [ string, string ][] = [];
     const values: any[] = [];
     if (filters.id != null) {
-      fieldsWithOperators.push(['id', '==']);
+      fieldsWithOperators.push(['id', '=']);
       values.push(filters.id);
     }
     if (filters.userId != null) {
-      fieldsWithOperators.push(['user_id', '==']);
+      fieldsWithOperators.push(['user_id', '=']);
       values.push(filters.userId);
     }
     if (filters.comment != null) {
@@ -41,7 +47,29 @@ export default class OrderFilters extends BaseFilters {
       values.push(filters.totalPriceTo);
     }
 
-    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators);
+    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
+    return { sql, values };
+  }
+
+  getSQLSettingValues({ startValueIndex = 1, separator = ' , ' } = {}): SQLParameters {
+    const filters = this.filters;
+    const fieldsWithOperators: [ string, string ][] = [];
+    const values: any[] = [];
+
+    if (filters.userId != null) {
+      fieldsWithOperators.push(['user_id', '=']);
+      values.push(filters.userId);
+    }
+    if (filters.comment != null) {
+      fieldsWithOperators.push(['comment', '=']);
+      values.push(filters.comment);
+    }
+    if (filters.totalPrice != null) {
+      fieldsWithOperators.push(['total_price', '=']);
+      values.push(filters.totalPriceFrom);
+    }
+
+    const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
     return { sql, values };
   }
 }

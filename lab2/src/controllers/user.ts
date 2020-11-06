@@ -17,6 +17,43 @@ const onGet = async (_filters: IUserFilters): Promise<string> => {
   }
 };
 
+const onDelete = async (_filters: IUserFilters): Promise<string> => {
+  const validationErrors = validateFilters(_filters);
+  if (validationErrors.length) {
+    return validationErrors.join('\n');
+  }
+  const filters = new UserFilters(_filters);
+  if (filters.isEmpty()) {
+    return 'Cannot delete without filters';
+  }
+  try {
+    await usersStorage.delete(filters);
+    return 'Successfully deleted';
+  } catch (err) {
+    return err.message;
+  }
+};
+
+
+const onUpdate = async (id: string, updateFields: IUserFilters): Promise<string> => {
+  const validationErrors = validateFilters(updateFields);
+  if (validationErrors.length) {
+    return validationErrors.join('\n');
+  }
+  delete updateFields['_'];
+  const filters = new UserFilters(updateFields);
+  if (filters.isEmpty()) {
+    return 'Cannot update without filters';
+  }
+  try {
+    const idFilter = new UserFilters({ id });
+    await usersStorage.update(idFilter, filters);
+    return 'Successfully update';
+  } catch (err) {
+    return err.message;
+  }
+};
+
 const validateFilters = (filters: IUserFilters): string[] => {
   const errors: string[] = [];
   if (filters.email && !validators.isString(filters.email)) {
@@ -38,5 +75,5 @@ const validateFilters = (filters: IUserFilters): string[] => {
 };
 
 export default {
-  onGet
+  onGet, onDelete, onUpdate
 }

@@ -1,7 +1,8 @@
 import validators from '../utils/typeValidation';
-import ProductCategoriesFilters from '../models/filters/productLineFilters';
+import ProductCategoriesFilters from '../models/filters/productCategoryFilters';
 import { IProductCategoryFilters } from '../models/filters/productCategoryFilters';
 import productLinesStorage from '../db/storages/productLinesStorage';
+import productCategoriesStorage from '../db/storages/productCategoriesStorage';
 
 const onGet = async (_filters: IProductCategoryFilters): Promise<string> => {
   const validationErrors = validateFilters(_filters);
@@ -10,10 +11,47 @@ const onGet = async (_filters: IProductCategoryFilters): Promise<string> => {
   }
   const filters = new ProductCategoriesFilters(_filters);
   try {
-    const categories = await productLinesStorage.get(filters);
+    const categories = await productCategoriesStorage.get(filters);
     return JSON.stringify(categories, null, 2);
   } catch (err) {
     console.log(err);
+    return err.message;
+  }
+};
+
+
+const onDelete = async (_filters: IProductCategoryFilters): Promise<string> => {
+  const validationErrors = validateFilters(_filters);
+  if (validationErrors.length) {
+    return validationErrors.join('\n');
+  }
+  const filters = new ProductCategoriesFilters(_filters);
+  if (filters.isEmpty()) {
+    return 'Cannot delete without filters';
+  }
+  try {
+    await productCategoriesStorage.delete(filters);
+    return 'Successfully deleted';
+  } catch (err) {
+    return err.message;
+  }
+};
+
+const onUpdate = async (id: string, updateFields: IProductCategoryFilters): Promise<string> => {
+  const validationErrors = validateFilters(updateFields);
+  if (validationErrors.length) {
+    return validationErrors.join('\n');
+  }
+  delete updateFields['_'];
+  const filters = new ProductCategoriesFilters(updateFields);
+  if (filters.isEmpty()) {
+    return 'Cannot update without filters';
+  }
+  try {
+    const idFilter = new ProductCategoriesFilters({ id });
+    await productCategoriesStorage.update(idFilter, filters);
+    return 'Successfully update';
+  } catch (err) {
     return err.message;
   }
 };
@@ -30,5 +68,5 @@ const validateFilters = (filters: IProductCategoryFilters): string[] => {
 };
 
 export default {
-  onGet
+  onGet, onDelete, onUpdate
 }
