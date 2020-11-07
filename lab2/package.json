@@ -1,0 +1,23 @@
+{
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "@types/node": "^14.14.6",
+    "minimist": "^1.2.5",
+    "mongoose": "^5.10.12",
+    "pg-promise": "^10.7.3",
+    "prompt": "^1.0.0",
+    "readline-sync": "^1.4.10",
+    "sql-template-strings": "^2.2.2",
+    "tsc": "^1.20150623.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
