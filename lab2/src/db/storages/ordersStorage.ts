@@ -7,13 +7,13 @@ import { BaseStorage } from './baseStorage';
 class OrdersStorage extends BaseStorage {
   public async get(filters: OrderFilters): Promise<Order[]> {
     const { sql, values } = filters.getSQLConditionsAndValues();
-    const query = SQL`SELECT * FROM orders ${sql.length ? 'WHERE' : ''} ${sql}`;
+    const query = `SELECT * FROM orders ${sql.length ? 'WHERE' : ''} ${sql}`;
     return db.any(query, values);
   }
 
   public async delete(filters: OrderFilters): Promise<any> {
     const { sql, values } = filters.getSQLConditionsAndValues();
-    const query = SQL`DELETE from orders ${sql.length ? 'WHERE' : ''} ${sql}`;
+    const query = `DELETE from orders ${sql.length ? 'WHERE' : ''} ${sql}`;
     return db.any(query, values);
   }
 

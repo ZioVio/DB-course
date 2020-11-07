@@ -80,6 +80,9 @@ const validateFilters = (filters: IProductFilters): string[] => {
   if (filters.name && !validators.isString(filters.name)) {
     errors.push('name must be a string');
   }
+  if (filters.price && validators.isNumber(filters.price)) {
+    errors.push('price must be a number');
+  }
   if (filters.priceFrom && !validators.isNumber(filters.priceFrom)) {
     errors.push('priceFrom must be a number');
   }

@@ -9,7 +9,6 @@ class ProductsStorage extends BaseStorage {
   public get(filters: ProductFilters): Promise<Product[]> {
     const { sql, values } = filters.getSQLConditionsAndValues();
     const query = `SELECT * FROM products ${sql.length ? 'WHERE' : ''} ${sql}`;
-    // const query = 'SELECT * from products INNER JOIN product_lines on products.line = product_lines.id'
     return db.any(query, values);
   }
 
@@ -30,15 +29,15 @@ class ProductsStorage extends BaseStorage {
     const query = SQL`
     INSERT INTO products ("name", image_url, "line", "category", price)
   (SELECT
-  md5(RANDOM() :: TEXT) as "name",
-  md5(RANDOM() :: TEXT) as image_url,
+    md5(RANDOM() :: TEXT) as "name",
+    md5(RANDOM() :: TEXT) as image_url,
  	(SELECT id FROM
-	product_lines OFFSET
-	 floor(RANDOM() * (
-		SELECT COUNT(*) FROM product_lines)) LIMIT 1) as "line",
-  	(SELECT id FROM
-	product_categories OFFSET
-	 floor(RANDOM() * (
+	  product_lines OFFSET
+	  floor(RANDOM() * (
+		  SELECT COUNT(*) FROM product_lines)) LIMIT 1) as "line",
+  	  (SELECT id FROM
+	      product_categories OFFSET
+	        floor(RANDOM() * (
 		SELECT COUNT(*) FROM product_lines)) LIMIT 1) as "category",
   trunc((RANDOM() * 1000)) as price
   FROM

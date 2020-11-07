@@ -92,20 +92,3 @@ class UI {
 
 export default new UI();
 
-
-// {
-//   get: (...args: string[]) => {
-//     const entity = this.getEntityName(args);
-//     if (!entity) {
-//       return console.log('No such entity');
-//     }
-//     const filters = minimist(args);
-//
-//   },
-//   update: (target: string) => {
-//     console.log('UPDATE', target);
-//   },
-//   delete: (target: string) => {
-//     console.log('DELETE', target);
-//   }
-// }
