@@ -33,6 +33,7 @@ class UI {
           case 'GET': this.onGet(controllers, parsedArgs); break;
           case 'DELETE': this.onDelete(controllers, parsedArgs); break;
           case 'UPDATE': this.onUpdate(controllers, parsedArgs._[0], parsedArgs); break;
+          case 'GENERATE': this.onGenerate(controllers, parsedArgs.count); break;
           default: this.onInvalid();
         }
       }
@@ -56,6 +57,15 @@ class UI {
       return console.log('Should provide id to update');
     }
     controllers.onUpdate(id, filters).then(result => {
+      console.log(result);
+    });
+  }
+
+  private onGenerate(controllers, count: number) {
+    if (!controllers.onGenerate) {
+      return console.log('Cannot generate current entity');
+    }
+    controllers.onGenerate(count).then(result => {
       console.log(result);
     });
   }

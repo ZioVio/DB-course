@@ -53,6 +53,19 @@ const onUpdate = async (id: string, updateFields: IProductFilters): Promise<stri
   }
 };
 
+const onGenerate = async (count) => {
+  count = parseInt(count);
+  if (isNaN(count) || count < 0) {
+    return console.log('Count should be a number and more than 0');
+  }
+  try {
+    await productsStorage.generate(count);
+    return `Successfully generated ${count} products`;
+  } catch (err) {
+    return err.message;
+  }
+}
+
 const validateFilters = (filters: IProductFilters): string[] => {
   const errors: string[] = [];
   if (filters.id && !validators.isString(filters.id)) {
@@ -77,5 +90,5 @@ const validateFilters = (filters: IProductFilters): string[] => {
 };
 
 export default {
-  onGet, onDelete, onUpdate
+  onGet, onDelete, onUpdate, onGenerate
 }
