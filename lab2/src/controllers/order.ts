@@ -13,6 +13,7 @@ const onGet = async (_filters: IOrderFilters): Promise<string> => {
     const orders = await ordersStorage.get(filters);
     return JSON.stringify(orders, null, 2);
   } catch (err) {
+    console.log(err);
     return err.message;
   }
 };
@@ -57,8 +58,8 @@ const onUpdate = async (id: string, updateFields: IOrderFilters): Promise<string
 
 const validateFilters = (filters: IOrderFilters): string[] => {
   const errors: string[] = [];
-  if (filters.id && !validators.isString(filters.id)) {
-    errors.push('id must be a string');
+  if (filters.id && !validators.isUUIDV4(filters.id)) {
+    errors.push('id must be UUIDV4');
   }
   if (filters.totalPriceFrom && !validators.isNumber(filters.totalPriceFrom)) {
     errors.push('totalPriceFrom must be a string');

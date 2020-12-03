@@ -2,6 +2,8 @@ import mapper from '../../utils/mapFieldsWithOperators';
 import BaseFilters, { IFilters, SQLConditionsParams } from "./baseFilters";
 import SQLParameters from './sqlParameters';
 import { areFiltersEmpty } from './baseFilters';
+import { WhereOptions } from 'sequelize/types';
+import { Op } from 'sequelize';
 
 
 export interface IUserFilters {
@@ -14,7 +16,7 @@ export interface IUserFilters {
 
 
 export default class UserFilters extends BaseFilters {
-  constructor(private filters: IUserFilters) {
+  constructor(public filters: IUserFilters) {
     super();
   }
 
@@ -74,5 +76,36 @@ export default class UserFilters extends BaseFilters {
 
     const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
     return { sql, values };
+  }
+
+  toWhereOptions(): WhereOptions<any> {
+    const filters = this.filters;
+    const opts: WhereOptions<any> = {};
+    if (filters.id != null) {
+      opts.id = {
+        [Op.eq]: filters.id,
+      };
+    }
+    if (filters.firstName != null) {
+      opts.first_name = {
+        [Op.like]: `%${filters.firstName}%`,
+      };
+    }
+    if (filters.lastName != null) {
+      opts.last_name = {
+        [Op.like]: `%${filters.lastName}%`,
+      };
+    }
+    if (filters.email != null) {
+      opts.email = {
+        [Op.like]: `%${filters.email}%`,
+      };
+    }
+    if (filters.phoneNumber != null) {
+      opts.phone_number = {
+        [Op.like]: `%${filters.phoneNumber}%`,
+      };
+    }
+    return opts;
   }
 }

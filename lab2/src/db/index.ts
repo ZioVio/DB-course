@@ -1,6 +1,11 @@
-import dbConfig from '../config/db';
+import dbConfig, { databaseURL } from '../config/db';
 import pgp from 'pg-promise';
+import { Sequelize } from 'sequelize';
 const db = pgp()(dbConfig);
+
+export const sequelize = new Sequelize(databaseURL, {
+  dialect: 'postgres',
+});
 
 export default {
   ...db,

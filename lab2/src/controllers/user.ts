@@ -56,8 +56,8 @@ const onUpdate = async (id: string, updateFields: IUserFilters): Promise<string>
 
 const validateFilters = (filters: IUserFilters): string[] => {
   const errors: string[] = [];
-  if (filters.email && !validators.isString(filters.email)) {
-    errors.push('Email must be a string');
+  if (filters.email && !validators.isUUIDV4(filters.email)) {
+    errors.push('Email must be UUIDV4');
   }
   if (filters.firstName && !validators.isString(filters.firstName)) {
     errors.push('firstName must be a string');

@@ -1,3 +1,4 @@
+import { Op, WhereOptions } from 'sequelize';
 import mapper from '../../utils/mapFieldsWithOperators';
 import BaseFilters from "./baseFilters";
 import { areFiltersEmpty } from './baseFilters';
@@ -10,7 +11,7 @@ export interface IProductCategoryFilters {
 
 export default class ProductCategoryFilters extends BaseFilters {
 
-  constructor(private filters: IProductCategoryFilters) {
+  constructor(public filters: IProductCategoryFilters) {
     super();
   }
 
@@ -46,6 +47,23 @@ export default class ProductCategoryFilters extends BaseFilters {
 
     const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
     return { sql, values };
+  }
+
+  toWhereOptions(): WhereOptions<any> {
+    const filters = this.filters;
+    const opts: WhereOptions<any> = {};
+    if (filters.id != null) {
+      opts.id = {
+        [Op.eq]: filters.id,
+      };
+    }
+    if (filters.name != null) {
+      opts.name = {
+        [Op.like]: `%${filters.name}%`,
+      };
+    }
+
+    return opts;
   }
 }
 

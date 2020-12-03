@@ -1,11 +1,12 @@
-import db from './db';
+import db, { sequelize } from './db';
 import UI from './view/index';
-import OrderFilters from './models/filters/orderFilters';
 
-db.connect()
-  .catch((err) => {
-    console.log('Failed to connect to db', err.message);
-  });
+
+sequelize.sync().then(() => {
+  console.log('connected to db');
+}).catch(err => {
+  console.log('failed to connect', err);
+});
 
 UI.start();
 

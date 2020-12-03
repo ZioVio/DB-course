@@ -58,8 +58,8 @@ const onUpdate = async (id: string, updateFields: IProductCategoryFilters): Prom
 
 const validateFilters = (filters: IProductCategoryFilters): string[] => {
   const errors: string[] = [];
-  if (filters.id && !validators.isString(filters.id)) {
-    errors.push('id must be a string');
+  if (filters.id && !validators.isUUIDV4(filters.id)) {
+    errors.push('id must be UUIDV4');
   }
   if (filters.name && !validators.isString(filters.name)) {
     errors.push('name must be a string');

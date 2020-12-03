@@ -1,3 +1,4 @@
+import { Op, WhereOptions, WhereValue } from 'sequelize';
 import mapper from '../../utils/mapFieldsWithOperators';
 import BaseFilters, { IFilters, SQLConditionsParams } from "./baseFilters";
 import { areFiltersEmpty } from './baseFilters';
@@ -16,7 +17,7 @@ export interface IProductFilters {
 
 
 export default class ProductFilters extends BaseFilters {
-  constructor(private filters: IProductFilters) {
+  constructor(public filters: IProductFilters) {
     super();
   }
 
@@ -80,5 +81,44 @@ export default class ProductFilters extends BaseFilters {
 
     const sql: string = mapper.mapFieldsWithOperatorsToSQL(fieldsWithOperators, startValueIndex, separator);
     return { sql, values };
+  }
+
+  toWhereOptions(): WhereOptions<any> {
+    const filters = this.filters;
+    const opts: WhereOptions<any> = {};
+
+    if (filters.id != null) {
+      opts.id = {
+        [Op.eq]: filters.id,
+      };
+    }
+    if (filters.name != null) {
+      opts.name = {
+        [Op.like]: `%${filters.name}%`,
+      };
+    }
+    if (filters.category != null) {
+      opts.category = {
+        [Op.eq]: filters.category,
+      };
+    }
+    if (filters.line != null) {
+      opts.line = {
+        [Op.eq]: filters.line,
+      };
+    }
+
+    const priceWhereOption: WhereValue = {};
+    if (filters.priceTo != null) {
+      priceWhereOption[Op.lte] = filters.priceTo;
+    }
+    if (filters.priceFrom != null) {
+      priceWhereOption[Op.gte] = filters.priceFrom;
+    }
+    if (filters.priceTo != null || filters.priceFrom != null) {
+      opts.price = priceWhereOption;
+    }
+
+    return opts;
   }
 }

@@ -68,8 +68,8 @@ const onGenerate = async (count) => {
 
 const validateFilters = (filters: IProductFilters): string[] => {
   const errors: string[] = [];
-  if (filters.id && !validators.isString(filters.id)) {
-    errors.push('id must be a string');
+  if (filters.id && !validators.isUUIDV4(filters.id)) {
+    errors.push('id must be UUIDV4');
   }
   if (filters.category && !validators.isString(filters.category)) {
     errors.push('category must be a string');
@@ -80,7 +80,7 @@ const validateFilters = (filters: IProductFilters): string[] => {
   if (filters.name && !validators.isString(filters.name)) {
     errors.push('name must be a string');
   }
-  if (filters.price && validators.isNumber(filters.price)) {
+  if (filters.price && !validators.isNumber(filters.price)) {
     errors.push('price must be a number');
   }
   if (filters.priceFrom && !validators.isNumber(filters.priceFrom)) {
