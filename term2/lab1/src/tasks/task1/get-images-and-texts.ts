@@ -1,5 +1,5 @@
 import { PageData, Fragment, WithNodeValue } from './types';
-import { select } from '../../utils/xpath';
+import { selectHTML } from '../../utils/xpath';
 
 const IGNORED_TAGS = [
   'script', 'style', 'iframe'
@@ -12,7 +12,7 @@ export const getImagesAndTexts = (doc: Document, url: string): PageData => {
   // */text()[not(parent::script or style)]
   // */text()[not(parent::script | style)]
   // *[not(self::script | style)]/text()
-  const nodes = select("//x:img/@src | //x:*/text()", doc)
+  const nodes = selectHTML("//x:img/@src | //x:*/text()", doc)
     .filter((node: Node) =>
     // @ts-ignore
     !IGNORED_TAGS.includes((node.parentNode as Node)?.tagName)

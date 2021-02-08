@@ -1,8 +1,8 @@
-import { select } from '../../utils/xpath';
+import { selectHTML } from '../../utils/xpath';
 import { WithNodeValue } from './types';
 
 export const getPageAnchors = async (doc: Document, baseUrl: string, limit?: number): Promise<string[]> => {
-  const nodes = select("//x:a/@href", doc);
+  const nodes = selectHTML("//x:a/@href", doc);
   // @ts-ignore
   const urls: string[] = nodes.map(({ nodeValue }: WithNodeValue) => nodeValue.startsWith('http')
     ? nodeValue

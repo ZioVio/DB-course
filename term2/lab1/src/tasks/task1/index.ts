@@ -4,7 +4,7 @@ import { HTMLToXMLDocument } from './../../utils/html-to-xml-document';
 import { getPageAnchors } from './get-page-anchors';
 import { getHtml } from './../../utils/html-fetcher';
 import { PAGES_TO_PARSE_COUNT } from './config';
-import { pagedDataToXML } from './pages-data-to-xml';
+import { pagesDataToXML } from './pages-data-to-xml';
 import fsPromise from 'fs/promises';
 import config from '../../config';
 
@@ -30,8 +30,9 @@ const getPagesDataRecursive = async (url: string): Promise<PageData[]> => {
   return pagesData; // parsed and found images and texts
 }
 
-export const run = async (url: string): Promise<void> => {
+export const run = async (url: string): Promise<string> => {
   const pagesData = await getPagesDataRecursive(url);
-  const xml = pagedDataToXML(pagesData);
+  const xml = pagesDataToXML(pagesData);
   await fsPromise.writeFile(config.TASK1_FILE_NAME, xml);
+  return xml;
 }
