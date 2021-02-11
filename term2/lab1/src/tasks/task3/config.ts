@@ -1,0 +1,1 @@
+export const PRODUCTS_TO_SCRAP_COUNT = 20;

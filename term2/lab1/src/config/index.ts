@@ -5,4 +5,5 @@ export default {
   ...cacheConfig,
   ...outputConfig,
   TASK1_BASE_URL: 'https://www.golos.ua',
+  TASK3_URL: 'https://petmarket.ua/',
 }

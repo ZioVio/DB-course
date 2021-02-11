@@ -10,5 +10,5 @@ export const pagesDataToXML = (pagesData: PageData[]): string => {
     });
     xml = xml.up();
   });
-  return xml.end({ pretty: true, indent: '      ' });;
+  return xml.end({ pretty: true, indent: '  ' });;
 }
