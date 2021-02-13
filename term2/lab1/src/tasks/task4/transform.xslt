@@ -14,16 +14,16 @@
             <div class="card-image">
               <img>
                 <xsl:attribute name="src">
-                  https://petmarket.ua<xsl:value-of select="@img" />
+                  https://petmarket.ua<xsl:value-of select="img" />
                 </xsl:attribute>
               </img>
             </div>
             <h5 class="card-title">
-              <xsl:value-of select="@name" />
+              <xsl:value-of select="name" />
             </h5>
             <xsl:if test="@price">
               <p class="card-text">
-                <xsl:value-of select="@price" />
+                <xsl:value-of select="price" />
               </p>
             </xsl:if>
           </div>
