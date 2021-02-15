@@ -21,7 +21,7 @@
             <h5 class="card-title">
               <xsl:value-of select="name" />
             </h5>
-            <xsl:if test="@price">
+            <xsl:if test="price">
               <p class="card-text">
                 <xsl:value-of select="price" />
               </p>
