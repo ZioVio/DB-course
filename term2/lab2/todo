@@ -10,15 +10,15 @@ Redis:
 
 CUI:
     user: 
-        - log in with username (no password)
-        - send and receive messages
-        - get count of OWN messages grouped by status
-        - group messages by status
+        - log in with username (no password) +
+        - send and receive messages +
+        - get count of OWN messages grouped by status +
+        - group messages by status +
     admin: 
         - view logs
-        - view online users
+        - view online users +
         - view stats:
-            - N most active senders
+            - N most active senders +
             - M most active spamers
     
 Worker(?):
@@ -48,7 +48,7 @@ fake info generation:
 List, +
 Hash - messages
 Sorted Set, + 
-Set - users messages
+Set - users online +
 Pub/Sub - on message
 
 LPush, RPop - queue-like for messages queue

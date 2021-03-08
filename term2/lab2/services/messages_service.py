@@ -46,6 +46,7 @@ def send_message(text, username_from, username_to):
     })
     r.hincrby(user_key, 'created-count', -1)
     r.hincrby(user_key, 'in-queue-count', 1)
+    r.zincrby("sent-count", 1, username_from)
 
 
 def get_user_incoming_messages(username):

@@ -3,7 +3,7 @@ from services.redis_connection import r
 
 def register(username):
     user_key = f"user:{username}"
-    r.sadd('users', user_key)
+    r.sadd('users', username)
     user_exists = r.exists(user_key)
     if user_exists:
         return
@@ -20,6 +20,14 @@ def register(username):
 
 
 def logout(username):
-    user_key = f"user:{username}"
-    r.srem('users', user_key)
+    r.srem('users', username)
+
+
+def get_users_online():
+    return r.smembers('users')
+
+
+def get_most_active_senders():
+    top_senders_count = 10
+    return r.zrange("sent-count", 0, top_senders_count, desc=True, withscores=True)
 
