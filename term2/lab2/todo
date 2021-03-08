@@ -1,0 +1,57 @@
+Redis:
+    - storage:
+        - user data
+        - user roles (user, admin)
+        - messages
+    - message queue:
+        - in check for spam and sending to user
+    - publish/share:
+        - used for logging
+
+CUI:
+    user: 
+        - log in with username (no password)
+        - send and receive messages
+        - get count of OWN messages
+        - group messages by status
+    admin: 
+        - view logs
+        - view online users
+        - view stats:
+            - N most active senders
+            - M most active spamers
+    
+Worker(?):
+    - view messages queue
+    - check queue for spam and log if found
+
+
+message status:
+    - created
+    - in queue
+    - spam checking
+    - blocked by spam
+    - sent 
+    - delivered
+
+logs:
+    - register
+    - login
+    - spam
+
+fake info generation:
+    - generate messages
+    - config workers count(?)
+    - spam checking delay(?), can be used simple random to check if message is spam:
+        -admin can connect and see whats happening
+
+List, +
+Hash - messages
+Sorted Set, + 
+Set - users
+Pub/Sub - on message
+
+LPush, RPop - queue-like for messages queue
+
+- check redis data structures
+
