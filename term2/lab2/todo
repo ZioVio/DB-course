@@ -12,7 +12,7 @@ CUI:
     user: 
         - log in with username (no password)
         - send and receive messages
-        - get count of OWN messages
+        - get count of OWN messages grouped by status
         - group messages by status
     admin: 
         - view logs
@@ -48,10 +48,11 @@ fake info generation:
 List, +
 Hash - messages
 Sorted Set, + 
-Set - users
+Set - users messages
 Pub/Sub - on message
 
 LPush, RPop - queue-like for messages queue
 
 - check redis data structures
 
+port 6379
