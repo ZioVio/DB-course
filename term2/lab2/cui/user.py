@@ -55,7 +55,7 @@ class UserCUI:
     def inbox(self):
         """Print inbox messages"""
         messages = messages_service.get_user_incoming_messages(self.username)
-        print('\n\n'.join([messages_service.message_to_string(message) for message in messages]))
+        print('\n\n'.join([messages_service.message_to_string(f"message:{message}") for message in messages]))
 
 
 def main():

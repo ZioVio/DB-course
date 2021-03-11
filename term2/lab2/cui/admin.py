@@ -1,6 +1,7 @@
 from cui import get_input
 import services.users_service as users_service
 
+
 class AdminCUI:
 
     def __init__(self):
@@ -25,8 +26,10 @@ class AdminCUI:
             elif selection == 4:
                 self.most_active_spammers()
 
+
     def logs(self):
         print('LOGS')
+
 
     def users_online(self):
         users = users_service.get_users_online()
