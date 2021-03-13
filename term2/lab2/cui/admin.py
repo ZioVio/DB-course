@@ -1,6 +1,6 @@
 from cui import get_input
 import services.users_service as users_service
-
+import logger
 
 class AdminCUI:
 
@@ -28,7 +28,7 @@ class AdminCUI:
 
 
     def logs(self):
-        print('LOGS')
+        print(logger.get_logs())
 
 
     def users_online(self):
@@ -49,7 +49,11 @@ class AdminCUI:
 
 
     def most_active_spammers(self):
-        print('MOST ACTIVE SPAMMERS')
+        spammers = users_service.get_most_active_spammers()
+        if len(spammers) == 0:
+            print("Np spam messages yet")
+        else:
+            print('\n'.join([f"{user} - {count}" for (user, count) in spammers]))
 
 
 def main():

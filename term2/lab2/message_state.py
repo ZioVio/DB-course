@@ -1,4 +1,4 @@
-class MessageState():
+class MessageState:
     CREATED = 'CREATED'
     IN_QUEUE = 'IN_QUEUE'
     IN_SPAM_CHECKING = 'IN_SPAM_CHECKING'

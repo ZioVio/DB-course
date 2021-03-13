@@ -17,9 +17,11 @@ def register(username):
         'delivered-count': 0,
         'total-count': 0,
     })
+    r.publish('login', username)
 
 
 def logout(username):
+    r.publish('logout', username)
     r.srem('users', username)
 
 
@@ -29,5 +31,10 @@ def get_users_online():
 
 def get_most_active_senders():
     top_senders_count = 10
-    return r.zrange("sent-count", 0, top_senders_count, desc=True, withscores=True)
+    return r.zrange('sent-count', 0, top_senders_count, desc=True, withscores=True)
+
+
+def get_most_active_spammers():
+    top_spammers_count = 10
+    return r.zrange('spam-count', 0, top_spammers_count, desc=True, withscores=True)
 

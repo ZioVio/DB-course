@@ -15,15 +15,15 @@ CUI:
         - get count of OWN messages grouped by status +
         - group messages by status +
     admin: 
-        - view logs
+        - view logs +
         - view online users +
         - view stats:
             - N most active senders +
-            - M most active spamers
+            - M most active spamers +
     
 Worker(?):
-    - view messages queue
-    - check queue for spam and log if found
+    - view messages queue +
+    - check queue for spam and log if found +
 
 
 message status:
@@ -35,9 +35,9 @@ message status:
     - delivered
 
 logs:
-    - register
-    - login
-    - spam
+    - login +
+    - logout +
+    - spam +
 
 fake info generation:
     - generate messages

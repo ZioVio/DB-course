@@ -1,5 +1,6 @@
 from services.redis_connection import r
 from message_state import MessageState
+import logger
 
 MESSAGE_ID_LENGTH = 10
 MESSAGES_QUEUE_KEY = 'messages'
@@ -123,11 +124,10 @@ def on_message_spam(message):
     print(f"Found spam message with id: {message['id']} from {message['sender-name']}")
     message_key = message['id']
     sender_key = f"user:{message['sender-name']}"
-    r.zincrby("spam-count", 1, sender_key)
     r.hset(message_key, 'status', MessageState.BLOCKED_BY_SPAM)
     r.hincrby(sender_key, 'spam-count', 1)
-    # todo add events and broadcasting
-    # r.publish('spam', "User %s sent spam message: \"%s\"" % (sender_username, message_text))
+    r.zincrby('spam-count', 1, sender_key)
+    r.publish('spam', message['sender-name'])
 
 
 def on_message_not_spam(message):
@@ -135,4 +135,5 @@ def on_message_not_spam(message):
     message_key = message['id']
     sender_key = f"user:{message['sender-name']}"
     r.zincrby('sent-count', 1, sender_key)
+    r.hincrby(sender_key, 'sent-count', 1)
     r.hset(message_key, 'status', MessageState.SENT)
