@@ -18,7 +18,6 @@ class MessageWorker(Thread):
         print(messages, '10 last messages is queue')
         while True:
             message = messages_service.get_next_queue_message()
-            pass
             if message is None:
                 continue
             self.process_message(message)
