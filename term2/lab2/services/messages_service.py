@@ -1,12 +1,17 @@
 from services.redis_connection import r
 from message_state import MessageState
-import logger
+
+def get_next_message_id_save():
+    next_message_id = r.get('message:id')
+    save_next_id = next_message_id if next_message_id is not None else 1
+    r.set('message:id', save_next_id)
+    r.incr('message:id')
+    return save_next_id
+
 
 MESSAGE_ID_LENGTH = 10
-MESSAGES_QUEUE_KEY = 'messages'
 
-next_message_id = r.get('message:id')
-r.set('message:id', next_message_id if next_message_id is not None else 1)
+MESSAGES_QUEUE_KEY = 'messages'
 
 
 def get_message_by_id(message_id):
@@ -28,8 +33,7 @@ def get_message_by_id(message_id):
 
 
 def send_message(text, username_from, username_to):
-    massage_id = r.get('message:id')
-    r.incr('message:id')
+    massage_id = get_next_message_id_save()
     message_key = f"message:{massage_id}"
     user_key = f"user:{username_from}"
     r.sadd(f'messages-sent-to:{username_to}', massage_id)

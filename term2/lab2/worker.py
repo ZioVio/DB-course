@@ -5,7 +5,7 @@ from services.redis_connection import r
 from threading import Thread
 from subscription_listener import SubscriptionListener
 
-DELAY = randint(1, 5)
+DELAY = randint(0, 2)
 
 
 class MessageWorker(Thread):
