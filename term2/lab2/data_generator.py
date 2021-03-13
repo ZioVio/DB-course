@@ -11,7 +11,7 @@ class DataGenerator:
 
     def start(self):
         r.flushall()
-        count = 10
+        count = 100
         users = self.__users(count)
         messages = self.__messages(count)
         for user in users:

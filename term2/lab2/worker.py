@@ -14,8 +14,6 @@ class MessageWorker(Thread):
         pass
 
     def run(self):
-        messages = r.lrange('messages', 0, 10)
-        print(messages, '10 last messages is queue')
         while True:
             message = messages_service.get_next_queue_message()
             if message is None:
@@ -36,9 +34,11 @@ def main():
     subs_listener = SubscriptionListener()
     subs_listener.setDaemon(True)
     subs_listener.start()
-    worker = MessageWorker()
-    worker.daemon = True
-    worker.start()
+    workers_count = 5
+    for _ in range(workers_count):
+        worker = MessageWorker()
+        worker.daemon = True
+        worker.start()
     while True:
         pass
 
