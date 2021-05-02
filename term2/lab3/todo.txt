@@ -1,0 +1,22 @@
+- Tags:
+  - tags will be added as a separate field and will be typed by used with no error input halding
+  - have relation to message as HAS_TAG
+  
+- neo4j:
+  -  change services code to be able to modify not only redis
+     but also a neo4j
+  - lab tasks:
+    - OBLIGATORY
+      - find users that sended or received messages with provided tags
+      - find users which are connected only with spam messages
+      - the same as first but without connection between users
+    - OPTIONAL
+      - find the shortest oath between users thougout sent or recevied messages
+      - N - number of commom messages between the users.find all users who have the N length connection
+
+
+- models mapping:
+  - add lastLogin and lastLogout fields for user
+  - details on drawio diagram
+
+    
