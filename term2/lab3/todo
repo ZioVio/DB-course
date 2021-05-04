@@ -1,6 +1,6 @@
 - Tags:
-  - tags will be added as a separate field and will be typed by used with no error input halding
-  - have relation to message as HAS_TAG
+  - tags will be added as a separate field and will be typed by used with no error input halding +
+  - have relation to message as HAS_TAG +
   
 - neo4j:
   -  change services code to be able to modify not only redis
@@ -18,5 +18,8 @@
 - models mapping:
   - add lastLogin and lastLogout fields for user
   - details on drawio diagram
+  - add user creation in neo ~
+  - add faker for tags ~
+  - add tags for messages ~
 
     
