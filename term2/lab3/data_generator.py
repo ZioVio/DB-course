@@ -7,21 +7,21 @@ import services.users_service as users_service
 
 class DataGenerator:
     tags = [
-        'long', 'extra', 'suspicious', 'animals', 'relations', 'sports', 'education', 'private', 'another tag-like word'
+        'long', 'extra', 'suspicious', 'animals', 'relations', 'sports', 'education', 'private', 'another tag-like word', 'spam'
     ]
     def __init__(self):
         self.__fake = Faker()
 
     def start(self):
         r.flushall()
-        count = 10
+        count = 20
         users = self.__users(count)
         messages = self.__messages(count)
         for user in users:
             users_service.register(user)
 
         for i in range(count):
-            random_messages_count = randint(0, 10)
+            random_messages_count = randint(0, 5)
             sender = users[i]
             other_users = users[0:i] + users[i + 1:]
             for j in range(random_messages_count):

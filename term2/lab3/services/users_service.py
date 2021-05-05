@@ -1,5 +1,5 @@
 from services.redis_connection import r
-
+from services.neo4j_connection import g
 
 def register(username):
     user_key = f"user:{username}"
@@ -18,6 +18,7 @@ def register(username):
         'total-count': 0,
     })
     r.publish('login', username)
+    g.register_user(username)
 
 
 def logout(username):
