@@ -10,11 +10,12 @@ class Neo4jConnection:
         query = ["CREATE (msg:Message {id: $id})"]
         for idx, tag in enumerate(tags):
             if tag != '' and tag is not None:
-
                 query.append(f"MERGE (tag{idx}:Tag {{ name: '{tag}' }})")
                 query.append(f"CREATE (msg)-[:HAS_TAG]->(tag{idx})")
-        query.append("MERGE (sender:User {username: $senderName})-[:SENT]->(msg)")
-        query.append("MERGE (msg)-[:TO]->(receiver:User {username: $receiverName})")
+        query.append("MERGE (sender:User {username: $senderName})")
+        query.append("MERGE (receiver:User {username: $receiverName})")
+        query.append("MERGE (sender)-[:SENT {to: $receiverName}]->(msg)")
+        query.append("MERGE (msg)-[:TO {from: $senderName}]->(receiver)")
         query_string = '\n'.join(query)
         print('\n' + query_string + '\n')
         tx.run(
@@ -29,8 +30,14 @@ class Neo4jConnection:
             session.write_transaction(self.__add_message, message_dict)
 
     def __register_user(self, tx, username):
+        already_existing_users = tx.run('MATCH (user:User {username: $username}) RETURN user', username=username)
+        for val in already_existing_users:
+            existing_username = val['user']['username']
+            print(existing_username, username)
+            if existing_username == username:
+                return
         tx.run(
-            "CREATE (user:User {username: $username, id: $username})",
+            "MERGE (user:User {username: $username})",
             username=username
         )
 
