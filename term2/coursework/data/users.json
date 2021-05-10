@@ -1,0 +1,2401 @@
+[
+  {
+    "id": "60992aa11ee31e33dc98d700",
+    "courses": [
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7"
+    ]
+  },
+  {
+    "id": "60992aa11f0a76b74783181b",
+    "courses": [
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa15cba4a8fd5d3d6c1",
+    "courses": [
+      "big_data",
+      "db_basics"
+    ]
+  },
+  {
+    "id": "60992aa1a49229981afd89a6",
+    "courses": [
+      "qa",
+      "big_data",
+      "db_basics"
+    ]
+  },
+  {
+    "id": "60992aa1808f6915cf36f9f1",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051"
+    ]
+  },
+  {
+    "id": "60992aa1f9ecc947a0f89ac9",
+    "courses": [
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7"
+    ]
+  },
+  {
+    "id": "60992aa1bbad13120d478d0d",
+    "courses": [
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa1259e4fca2da084ca",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa1c9689f693eae3f9e",
+    "courses": [
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7",
+      "60992be7dc32ccf3cbbb90f0"
+    ]
+  },
+  {
+    "id": "60992aa14dd64cad2287cd06",
+    "courses": [
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa"
+    ]
+  },
+  {
+    "id": "60992aa10d37c395d86ddb07",
+    "courses": [
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596"
+    ]
+  },
+  {
+    "id": "60992aa1483df512127489a1",
+    "courses": [
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa13457bb53313de2f1",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051"
+    ]
+  },
+  {
+    "id": "60992aa1f985fe82a7049f62",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa15b247c1117d805ba",
+    "courses": [
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0"
+    ]
+  },
+  {
+    "id": "60992aa13528b2f77257d182",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691"
+    ]
+  },
+  {
+    "id": "60992aa18e188f5b5e1f4cb7",
+    "courses": [
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142"
+    ]
+  },
+  {
+    "id": "60992aa160c9ae70b3a5cbe4",
+    "courses": [
+      "eng",
+      "fr",
+      "maths"
+    ]
+  },
+  {
+    "id": "60992aa17352d47264b9f76b",
+    "courses": [
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6"
+    ]
+  },
+  {
+    "id": "60992aa1b8f7f35e244ea1ca",
+    "courses": [
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa1755d824d8d27eb25",
+    "courses": [
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6"
+    ]
+  },
+  {
+    "id": "60992aa1ba034711cd5fbc6f",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818"
+    ]
+  },
+  {
+    "id": "60992aa1a04c4185011e61de",
+    "courses": [
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691"
+    ]
+  },
+  {
+    "id": "60992aa1ba7eb6325704d3df",
+    "courses": [
+      "eng",
+      "fr",
+      "maths"
+    ]
+  },
+  {
+    "id": "60992aa1501017d7c49a97d7",
+    "courses": [
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy"
+    ]
+  },
+  {
+    "id": "60992aa110e199218ca9a0aa",
+    "courses": [
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa196bb5cebbc04819d",
+    "courses": [
+      "qa",
+      "big_data",
+      "db_basics"
+    ]
+  },
+  {
+    "id": "60992aa151624914c3d6fe32",
+    "courses": [
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa17bffc0a828b6c598",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8"
+    ]
+  },
+  {
+    "id": "60992aa139f31133a9ad0f54",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph"
+    ]
+  },
+  {
+    "id": "60992aa1b8d95b63a52102d8",
+    "courses": [
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf"
+    ]
+  },
+  {
+    "id": "60992aa1896ce5180577a7b6",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa1e112abdfb4943011",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa1ee4b1d9550f19363",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa1298e6223545ffd67",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa1353b333801b7a5c8",
+    "courses": [
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6"
+    ]
+  },
+  {
+    "id": "60992aa14a7b0c3dead7dfb1",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691"
+    ]
+  },
+  {
+    "id": "60992aa1a4f6b2065eaa5d50",
+    "courses": [
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a"
+    ]
+  },
+  {
+    "id": "60992aa1314b4ae43f33fe0c",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa187537c7b2e532fa4",
+    "courses": [
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89"
+    ]
+  },
+  {
+    "id": "60992aa1e267d856d00f61e2",
+    "courses": [
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc"
+    ]
+  },
+  {
+    "id": "60992aa1283f367342ca6ef2",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa11e632cd85e17dc4b",
+    "courses": [
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37"
+    ]
+  },
+  {
+    "id": "60992aa11071ac53b5e446bb",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa10ba2b17726e3a1bc",
+    "courses": [
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa198e0ed8de2c8962b",
+    "courses": [
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596"
+    ]
+  },
+  {
+    "id": "60992aa15ae6cb9b264ecca8",
+    "courses": [
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7"
+    ]
+  },
+  {
+    "id": "60992aa13ce345c44ec5dab3",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa176d56872592d37e1",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry"
+    ]
+  },
+  {
+    "id": "60992aa17d11663850cb736a",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa11a078811e49031d6",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa1bbfa8e1f899082a8",
+    "courses": [
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818"
+    ]
+  },
+  {
+    "id": "60992aa1a16c1781097a968f",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa1161e4057469a1d0c",
+    "courses": [
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142"
+    ]
+  },
+  {
+    "id": "60992aa19f5bb95d1944c2c0",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa156cef94f4031d1ae",
+    "courses": [
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra"
+    ]
+  },
+  {
+    "id": "60992aa113d365e9c85561b9",
+    "courses": [
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0"
+    ]
+  },
+  {
+    "id": "60992aa15507bda3fdc9c350",
+    "courses": [
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa155da421ed9aa67d5",
+    "courses": [
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6"
+    ]
+  },
+  {
+    "id": "60992aa1b4bb56c29c42e655",
+    "courses": [
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6"
+    ]
+  },
+  {
+    "id": "60992aa1b11c788a149eda9f",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa13bfa64266b1478d0",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa19db46bbe4b28464d",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa16611ee6612d249a2",
+    "courses": [
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b"
+    ]
+  },
+  {
+    "id": "60992aa18204136349814832",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818"
+    ]
+  },
+  {
+    "id": "60992aa1614a458eec5d04fc",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8"
+    ]
+  },
+  {
+    "id": "60992aa1acd929600e61ff07",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa134866eb0095e0f01",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa13a27c36f1b713231",
+    "courses": [
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a"
+    ]
+  },
+  {
+    "id": "60992aa196589d8d5108528a",
+    "courses": [
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba"
+    ]
+  },
+  {
+    "id": "60992aa1b517e77ce7942d71",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8"
+    ]
+  },
+  {
+    "id": "60992aa1233821d1788eb529",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa11d04ca75eb5be1e8",
+    "courses": [
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa1de8d545da8e0c08d",
+    "courses": [
+      "comp_graph",
+      "philosophy",
+      "geometry"
+    ]
+  },
+  {
+    "id": "60992aa1d2640bc5725fd7b1",
+    "courses": [
+      "geometry",
+      "algebra"
+    ]
+  },
+  {
+    "id": "60992aa1376b84af70173d30",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry"
+    ]
+  },
+  {
+    "id": "60992aa1484a0e5826182760",
+    "courses": [
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691"
+    ]
+  },
+  {
+    "id": "60992aa179bea8d1b26676da",
+    "courses": [
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b"
+    ]
+  },
+  {
+    "id": "60992aa1f3d275875b6f81bf",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa1f13fcad305b41620",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa1bfbd46ef734a5e3a",
+    "courses": [
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa1e1236e006542d1e7",
+    "courses": [
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a"
+    ]
+  },
+  {
+    "id": "60992aa1e76e323b984aa2ff",
+    "courses": [
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142"
+    ]
+  },
+  {
+    "id": "60992aa176f85dbc99af78fc",
+    "courses": [
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596"
+    ]
+  },
+  {
+    "id": "60992aa18e49949ea6de9219",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa1eec0d60c880ed3c8",
+    "courses": [
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa1398c37a68a9cf0cf",
+    "courses": [
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa"
+    ]
+  },
+  {
+    "id": "60992aa1daddd9905522ec52",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa166a09acf906594e4",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6"
+    ]
+  },
+  {
+    "id": "60992aa1569e5568f5c8166e",
+    "courses": [
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa16dc24028c5984631",
+    "courses": [
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa106d8c046edc3bfd9",
+    "courses": [
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa1611fa7e883767a31",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa189e23f678f98ef91",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8"
+    ]
+  },
+  {
+    "id": "60992aa1b53d524314b5f770",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6"
+    ]
+  },
+  {
+    "id": "60992aa1a7617e45c05fb04c",
+    "courses": [
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa"
+    ]
+  },
+  {
+    "id": "60992aa1b50c69b676b6e316",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01"
+    ]
+  },
+  {
+    "id": "60992aa1eff3ed7f561470ae",
+    "courses": [
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6"
+    ]
+  },
+  {
+    "id": "60992aa1062a7e852a5f1c7e",
+    "courses": [
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0"
+    ]
+  },
+  {
+    "id": "60992aa14cb649a13e4be9ba",
+    "courses": [
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a"
+    ]
+  },
+  {
+    "id": "60992aa1d660709e4338f292",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data"
+    ]
+  },
+  {
+    "id": "60992aa16eaaf7f76776714a",
+    "courses": [
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba"
+    ]
+  },
+  {
+    "id": "60992aa118bcca2df65bfae6",
+    "courses": [
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa"
+    ]
+  },
+  {
+    "id": "60992aa101e62f82441e467c",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0"
+    ]
+  },
+  {
+    "id": "60992aa13d5f97670a322bd5",
+    "courses": [
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6"
+    ]
+  },
+  {
+    "id": "60992aa1990cf87d9b820813",
+    "courses": [
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0"
+    ]
+  },
+  {
+    "id": "60992aa1dccb5e680c828a46",
+    "courses": [
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142"
+    ]
+  },
+  {
+    "id": "60992aa1d91865cc18db9b71",
+    "courses": [
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b"
+    ]
+  },
+  {
+    "id": "60992aa182f5e86d25a119fd",
+    "courses": [
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa189c4a2e99ec86eaf",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics"
+    ]
+  },
+  {
+    "id": "60992aa133db401cdb2d734c",
+    "courses": [
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa1814d96ab575a645f",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8"
+    ]
+  },
+  {
+    "id": "60992aa1526a7bfe925fdc1b",
+    "courses": [
+      "fr",
+      "maths"
+    ]
+  },
+  {
+    "id": "60992aa15d297c23dc92c767",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa1f962a14ef9458831",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818"
+    ]
+  },
+  {
+    "id": "60992aa1d88292cb6f43b4bc",
+    "courses": [
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37"
+    ]
+  },
+  {
+    "id": "60992aa1f40533a398b820c7",
+    "courses": [
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596"
+    ]
+  },
+  {
+    "id": "60992aa19b25c5f25efbdc82",
+    "courses": [
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa1bc6fc296ba5097d3",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa122827dbb1368347c",
+    "courses": [
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa1a1e2bd8e07c61824",
+    "courses": [
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa199569a91df4fbec9",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818"
+    ]
+  },
+  {
+    "id": "60992aa1259393a51caf797f",
+    "courses": [
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818"
+    ]
+  },
+  {
+    "id": "60992aa12a458dd35a86e0e0",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa12776337dc69c2b6a",
+    "courses": [
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7"
+    ]
+  },
+  {
+    "id": "60992aa1f2fb7ea5b003f163",
+    "courses": [
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89"
+    ]
+  },
+  {
+    "id": "60992aa1cd5c95721493cd43",
+    "courses": [
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa1f764a176d35e8e9b",
+    "courses": [
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc"
+    ]
+  },
+  {
+    "id": "60992aa1fc832151858425ef",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051"
+    ]
+  },
+  {
+    "id": "60992aa16ee9feb2cc3ad288",
+    "courses": [
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7"
+    ]
+  },
+  {
+    "id": "60992aa1a59f3b0e0794a31f",
+    "courses": [
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8"
+    ]
+  },
+  {
+    "id": "60992aa138b99811c1496441",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0"
+    ]
+  },
+  {
+    "id": "60992aa189b1d0ca63bfa832",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0"
+    ]
+  },
+  {
+    "id": "60992aa159cc752af6852c02",
+    "courses": [
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89"
+    ]
+  },
+  {
+    "id": "60992aa1ab81372d5bd3a154",
+    "courses": [
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa149b2360e791ad9ae",
+    "courses": [
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa190334c48597bfb12",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa1b14a1e2dca5590b1",
+    "courses": [
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7"
+    ]
+  },
+  {
+    "id": "60992aa1f3e0baebdd0d3ccf",
+    "courses": [
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy"
+    ]
+  },
+  {
+    "id": "60992aa1767f3473a8c89208",
+    "courses": [
+      "db_basics",
+      "comp_graph"
+    ]
+  },
+  {
+    "id": "60992aa13bef377b06f922e1",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0"
+    ]
+  },
+  {
+    "id": "60992aa10e912ffbff967237",
+    "courses": [
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142"
+    ]
+  },
+  {
+    "id": "60992aa1af9011190bd5fd30",
+    "courses": [
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa184d06f0f7f3bd982",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa10b0d7be4ef00e267",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa1c074e5909fb777d9",
+    "courses": [
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry"
+    ]
+  },
+  {
+    "id": "60992aa12924bceeb7cf8a5f",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa165f8a090b50c6caa",
+    "courses": [
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6"
+    ]
+  },
+  {
+    "id": "60992aa1fb46aba6b44a1647",
+    "courses": [
+      "60992be7c38b2ba0951e546b",
+      "60992be7eb90605b8c1401f7",
+      "60992be7dc32ccf3cbbb90f0"
+    ]
+  },
+  {
+    "id": "60992aa1155fbea0f56ee0ea",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa1c7e9d7daa55d4a4a",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa14b5ce561349af0fa",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics"
+    ]
+  },
+  {
+    "id": "60992aa1ce23cfb4fa027934",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa1a2033df76048247f",
+    "courses": [
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596",
+      "60992be7f5028ea8f84f1142",
+      "60992be7c38b2ba0951e546b"
+    ]
+  },
+  {
+    "id": "60992aa14937f4294bfb05bc",
+    "courses": [
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa1b7b023e2fd6aa215",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa1b6c33632f0216ca9",
+    "courses": [
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa154881da2e77b3e29",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa1876efbe76289154e",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa10fd16f6fd49d4503",
+    "courses": [
+      "qa",
+      "big_data"
+    ]
+  },
+  {
+    "id": "60992aa1fd42af73741d4102",
+    "courses": [
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa1e7901e66ff3d18d2",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b"
+    ]
+  },
+  {
+    "id": "60992aa1dbeb0d72f656985b",
+    "courses": [
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra"
+    ]
+  },
+  {
+    "id": "60992aa110433bedbc0e057c",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa12faddcc16d3b1cab",
+    "courses": [
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc"
+    ]
+  },
+  {
+    "id": "60992aa115d6dd0f1eb3d51a",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa18483be3bfdd9fd56",
+    "courses": [
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa112ce7b89c17309c0",
+    "courses": [
+      "big_data",
+      "db_basics"
+    ]
+  },
+  {
+    "id": "60992aa167578724303399ba",
+    "courses": [
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa17b7035da7bf27e64",
+    "courses": [
+      "eng",
+      "fr"
+    ]
+  },
+  {
+    "id": "60992aa1365df9544106fac6",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8"
+    ]
+  },
+  {
+    "id": "60992aa124148dd8aa8b696b",
+    "courses": [
+      "db_basics",
+      "comp_graph",
+      "philosophy"
+    ]
+  },
+  {
+    "id": "60992aa10b69069d0628d8de",
+    "courses": [
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra"
+    ]
+  },
+  {
+    "id": "60992aa179d2831f10480074",
+    "courses": [
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0"
+    ]
+  },
+  {
+    "id": "60992aa15bbb8608a0d44e27",
+    "courses": [
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e"
+    ]
+  },
+  {
+    "id": "60992aa1fc6b3c2ecb575fcb",
+    "courses": [
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045"
+    ]
+  },
+  {
+    "id": "60992aa1902916e1fd76bf96",
+    "courses": [
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6"
+    ]
+  },
+  {
+    "id": "60992aa109306b863ebda4ad",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa18de777c096ceb697",
+    "courses": [
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01"
+    ]
+  },
+  {
+    "id": "60992aa10b6bca72e764b6cc",
+    "courses": [
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f"
+    ]
+  },
+  {
+    "id": "60992aa1c5ad06523212591f",
+    "courses": [
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa1c02a445817e68c69",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7"
+    ]
+  },
+  {
+    "id": "60992aa1300d618eb14b9a63",
+    "courses": [
+      "philosophy",
+      "geometry",
+      "algebra",
+      "60992be75ae3461f12a343e0",
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44"
+    ]
+  },
+  {
+    "id": "60992aa1147c909a3af6165e",
+    "courses": [
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf"
+    ]
+  },
+  {
+    "id": "60992aa1e7e8887bca42a51e",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa16843a83eef6ddc60",
+    "courses": [
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa13386783ee160ca18",
+    "courses": [
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0"
+    ]
+  },
+  {
+    "id": "60992aa1c623d18a6b271688",
+    "courses": [
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89"
+    ]
+  },
+  {
+    "id": "60992aa1c1c0663ad18d201a",
+    "courses": [
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb"
+    ]
+  },
+  {
+    "id": "60992aa14d892a3a709c02c1",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818"
+    ]
+  },
+  {
+    "id": "60992aa1ff4f50b6a4fc1507",
+    "courses": [
+      "comp_graph",
+      "philosophy",
+      "geometry"
+    ]
+  },
+  {
+    "id": "60992aa12b93e358ef03c1d7",
+    "courses": [
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89",
+      "60992be758eada59bb0b2596"
+    ]
+  },
+  {
+    "id": "60992aa14f6e08db6e0f6441",
+    "courses": [
+      "60992be75fa7a4153e28c691",
+      "60992be777f9dc6be84eef01",
+      "60992be73709f9bda03febd8",
+      "60992be73239a522e267b051",
+      "60992be7e8b31a75fd4a9045",
+      "60992be7e38aae0e18957b44",
+      "60992be7bb03df3431e955e7",
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59"
+    ]
+  },
+  {
+    "id": "60992aa1cdacd92158d5490c",
+    "courses": [
+      "eng",
+      "fr",
+      "maths",
+      "qa",
+      "big_data",
+      "db_basics",
+      "comp_graph",
+      "philosophy",
+      "geometry"
+    ]
+  },
+  {
+    "id": "60992aa17c6fd4a441bba2b8",
+    "courses": [
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba"
+    ]
+  },
+  {
+    "id": "60992aa17e8c83d5496e0ae8",
+    "courses": [
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc"
+    ]
+  },
+  {
+    "id": "60992aa151994f821744817c",
+    "courses": [
+      "db_basics",
+      "comp_graph"
+    ]
+  },
+  {
+    "id": "60992aa1989e8880c42f8f5f",
+    "courses": [
+      "60992be74591515d1e34527b",
+      "60992be78f47aa988c6af17e",
+      "60992be72fc3207d90a8a35f",
+      "60992be787620d59756e6c59",
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba"
+    ]
+  },
+  {
+    "id": "60992aa137e4afac5569cf3a",
+    "courses": [
+      "60992be7a502d2d4c3a86f2a",
+      "60992be70765c662ddd094e6",
+      "60992be7844cdd3f115a80e0",
+      "60992be7cee2e034bba39b6a",
+      "60992be788a9072ead2ae8fc",
+      "60992be7fe7a757f4454e1ba",
+      "60992be70a570c67b8520ecb",
+      "60992be7f3ddccddcca92da6",
+      "60992be7a8378cf99a992d37",
+      "60992be7885331e08274edfa",
+      "60992be73f2eadbb41150c89"
+    ]
+  },
+  {
+    "id": "60992aa1467cc25c4992b36d",
+    "courses": [
+      "60992be7ff45d68439829818",
+      "60992be7c28ecbf60c9d9dbf",
+      "60992be7a502d2d4c3a86f2a"
+    ]
+  }
+]

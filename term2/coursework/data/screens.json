@@ -1,0 +1,131 @@
+[
+  {
+    "id": "classes",
+    "name": "Classes",
+    "actions": [
+      {
+        "name": "press:create_class"
+      },
+      {
+        "name": "drawer:press:course",
+        "meta": {
+          "course_id": "RANDOM_COURSE_ID"
+        }
+      },
+      {
+        "name": "press:course",
+        "meta": {
+          "course_id": "RANDOM_COURSE_ID"
+        }
+      }
+    ],
+    "can_go_to": [
+      "classes_join",
+      "notifications",
+      "course_main",
+      "todo_1"
+    ]
+  },
+  {
+    "id": "classes_join",
+    "name": "Join class"
+  },
+  {
+    "id": "notifications",
+    "name": "Notifications"
+  },
+  {
+    "id": "course_main",
+    "name": "Course main page",
+    "meta": {
+      "course_id": "RANDOM_COURSE_ID"
+    },
+    "actions": [
+      {
+        "name": "press:about",
+        "meta": {
+          "course_id": "RANDOM_COURSE_ID"
+        }
+      }
+    ],
+    "can_go_to": [
+      "course_people",
+      "course_todo",
+      "notifications",
+      "classes"
+    ]
+  },
+  {
+    "id": "course_todo",
+    "name": "Course assignments",
+    "actions": [
+      {
+        "name": "press:assignment"
+      }
+    ],
+    "can_go_to": [
+      "course_main",
+      "course_todo",
+      "notifications",
+      "classes",
+      "course_my"
+    ]
+  },
+  {
+    "id": "course_people",
+    "name": "Course people"
+  },
+  {
+    "id": "course_my",
+    "name": "Course my account",
+    "can_go_to": [
+      "course_assignment"
+    ]
+  },
+  {
+    "id": "course_assignment",
+    "name": "Course assignment screen"
+  },
+  {
+    "id": "todo_1",
+    "name": "Todo - assigned",
+    "can_go_to": [
+      "course_assignment"
+    ]
+  },
+  {
+    "id": "todo_2",
+    "name": "Todo - Missing",
+    "can_go_to": [
+      "course_assignment"
+    ]
+  },
+  {
+    "id": "todo_3",
+    "name": "Todo - done",
+    "can_go_to": [
+      "course_assignment"
+    ]
+  },
+  {
+    "id": "archived",
+    "name": "Archived classes",
+    "can_go_to": [
+      "course_main",
+      "notifications",
+      "classes"
+    ]
+  },
+  {
+    "id": "drive",
+    "name": "Classroom google drive folders"
+  },
+  {
+    "id": "settings",
+    "name": "Settings"
+  },
+  {
+    "id": "help",
+    "name": "Help"
+  }
+]
