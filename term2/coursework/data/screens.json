@@ -7,24 +7,19 @@
         "name": "press:create_class"
       },
       {
-        "name": "drawer:press:course",
-        "meta": {
-          "course_id": "RANDOM_COURSE_ID"
-        }
+        "name": "drawer:press:course"
       },
       {
-        "name": "press:course",
-        "meta": {
-          "course_id": "RANDOM_COURSE_ID"
-        }
+        "name": "press:course"
       }
     ],
     "can_go_to": [
-      "classes_join",
-      "notifications",
-      "course_main",
-      "todo_1"
-    ]
+      ["classes_join", 10],
+      ["notifications", 20],
+      ["course_main", 50],
+      ["todo_1", 30]
+    ],
+    "can_be_initial": true
   },
   {
     "id": "classes_join",
@@ -32,27 +27,26 @@
   },
   {
     "id": "notifications",
-    "name": "Notifications"
+    "name": "Notifications",
+    "can_go_to": [
+      ["course_assignment", 80]
+    ]
   },
   {
     "id": "course_main",
     "name": "Course main page",
-    "meta": {
-      "course_id": "RANDOM_COURSE_ID"
-    },
     "actions": [
       {
-        "name": "press:about",
-        "meta": {
-          "course_id": "RANDOM_COURSE_ID"
-        }
+        "name": "press:about"
       }
     ],
     "can_go_to": [
-      "course_people",
-      "course_todo",
-      "notifications",
-      "classes"
+      ["course_people", 10],
+      ["course_todo", 20],
+      ["notifications", 8],
+      ["classes", 15],
+      ["settings", 3],
+      ["drive", 3]
     ]
   },
   {
@@ -64,56 +58,73 @@
       }
     ],
     "can_go_to": [
-      "course_main",
-      "course_todo",
-      "notifications",
-      "classes",
-      "course_my"
+      ["course_main", 30],
+      ["notifications", 8],
+      ["classes", 15],
+      ["course_my", 5],
+      ["settings", 3],
+      ["drive", 3]
     ]
   },
   {
     "id": "course_people",
-    "name": "Course people"
+    "name": "Course people",
+    "can_go_to": [
+      ["course_main", 30],
+      ["notifications", 8],
+      ["classes", 15],
+      ["settings", 3],
+      ["drive", 3]
+    ]
   },
   {
     "id": "course_my",
     "name": "Course my account",
     "can_go_to": [
-      "course_assignment"
+      ["course_assignment", 20]
     ]
   },
   {
     "id": "course_assignment",
-    "name": "Course assignment screen"
+    "name": "Course assignment screen",
+    "can_be_initial": true,
+    "can_go_to": [
+       ["course_main", 30],
+      ["course_todo", 20],
+      ["settings", 5],
+      ["drive", 3],
+      ["notifications", 3]
+    ]
   },
   {
     "id": "todo_1",
     "name": "Todo - assigned",
     "can_go_to": [
-      "course_assignment"
+      ["course_assignment", 80]
     ]
   },
   {
     "id": "todo_2",
     "name": "Todo - Missing",
     "can_go_to": [
-      "course_assignment"
+      ["course_assignment", 80]
     ]
   },
   {
     "id": "todo_3",
     "name": "Todo - done",
     "can_go_to": [
-      "course_assignment"
+      ["course_assignment", 80]
     ]
   },
   {
     "id": "archived",
     "name": "Archived classes",
     "can_go_to": [
-      "course_main",
-      "notifications",
-      "classes"
+      ["course_main", 20],
+      ["notifications", 3],
+      ["classes", 30],
+      ["settings", 5]
     ]
   },
   {
