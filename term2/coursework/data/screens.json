@@ -7,17 +7,31 @@
         "name": "press:create_class"
       },
       {
-        "name": "drawer:press:course"
+        "name": "drawer:press:course",
+        "navigates_to": "course_main"
       },
       {
-        "name": "press:course"
+        "name": "press:course",
+        "navigates_to": "course_main"
       }
     ],
     "can_go_to": [
-      ["classes_join", 10],
-      ["notifications", 20],
-      ["course_main", 50],
-      ["todo_1", 30]
+      [
+        "classes_join",
+        10
+      ],
+      [
+        "notifications",
+        20
+      ],
+      [
+        "course_main",
+        50
+      ],
+      [
+        "todo_1",
+        30
+      ]
     ],
     "can_be_initial": true
   },
@@ -29,7 +43,10 @@
     "id": "notifications",
     "name": "Notifications",
     "can_go_to": [
-      ["course_assignment", 80]
+      [
+        "course_assignment",
+        80
+      ]
     ]
   },
   {
@@ -41,12 +58,30 @@
       }
     ],
     "can_go_to": [
-      ["course_people", 10],
-      ["course_todo", 20],
-      ["notifications", 8],
-      ["classes", 15],
-      ["settings", 3],
-      ["drive", 3]
+      [
+        "course_people",
+        10
+      ],
+      [
+        "course_todo",
+        20
+      ],
+      [
+        "notifications",
+        8
+      ],
+      [
+        "classes",
+        15
+      ],
+      [
+        "settings",
+        3
+      ],
+      [
+        "drive",
+        3
+      ]
     ]
   },
   {
@@ -54,34 +89,75 @@
     "name": "Course assignments",
     "actions": [
       {
-        "name": "press:assignment"
+        "name": "press:assignment",
+        "navigates_to": "course_assignment"
       }
     ],
     "can_go_to": [
-      ["course_main", 30],
-      ["notifications", 8],
-      ["classes", 15],
-      ["course_my", 5],
-      ["settings", 3],
-      ["drive", 3]
+      [
+        "course_main",
+        30
+      ],
+      [
+        "notifications",
+        8
+      ],
+      [
+        "course_assignment",
+        40
+      ],
+      [
+        "classes",
+        15
+      ],
+      [
+        "course_my",
+        5
+      ],
+      [
+        "settings",
+        3
+      ],
+      [
+        "drive",
+        3
+      ]
     ]
   },
   {
     "id": "course_people",
     "name": "Course people",
     "can_go_to": [
-      ["course_main", 30],
-      ["notifications", 8],
-      ["classes", 15],
-      ["settings", 3],
-      ["drive", 3]
+      [
+        "course_main",
+        30
+      ],
+      [
+        "notifications",
+        8
+      ],
+      [
+        "classes",
+        15
+      ],
+      [
+        "settings",
+        3
+      ],
+      [
+        "drive",
+        3
+      ]
     ]
   },
   {
     "id": "course_my",
     "name": "Course my account",
     "can_go_to": [
-      ["course_assignment", 20]
+      [
+        "course_assignment",
+        20
+      ]
     ]
   },
   {
@@ -89,42 +165,78 @@
     "name": "Course assignment screen",
     "can_be_initial": true,
     "can_go_to": [
-       ["course_main", 30],
-      ["course_todo", 20],
-      ["settings", 5],
-      ["drive", 3],
-      ["notifications", 3]
+      [
+        "course_main",
+        30
+      ],
+      [
+        "course_todo",
+        20
+      ],
+      [
+        "settings",
+        5
+      ],
+      [
+        "drive",
+        3
+      ],
+      [
+        "notifications",
+        3
+      ]
     ]
   },
   {
     "id": "todo_1",
     "name": "Todo - assigned",
     "can_go_to": [
-      ["course_assignment", 80]
+      [
+        "course_assignment",
+        80
+      ]
     ]
   },
   {
     "id": "todo_2",
     "name": "Todo - Missing",
     "can_go_to": [
-      ["course_assignment", 80]
+      [
+        "course_assignment",
+        80
+      ]
     ]
   },
   {
     "id": "todo_3",
     "name": "Todo - done",
     "can_go_to": [
-      ["course_assignment", 80]
+      [
+        "course_assignment",
+        80
+      ]
     ]
   },
   {
     "id": "archived",
     "name": "Archived classes",
     "can_go_to": [
-      ["course_main", 20],
-      ["notifications", 3],
-      ["classes", 30],
-      ["settings", 5]
+      [
+        "course_main",
+        20
+      ],
+      [
+        "notifications",
+        3
+      ],
+      [
+        "classes",
+        30
+      ],
+      [
+        "settings",
+        5
+      ]
     ]
   },
   {

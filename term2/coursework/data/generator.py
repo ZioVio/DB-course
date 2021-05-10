@@ -28,10 +28,22 @@ class DataGenerator:
         random_start_screen = choice(possible_initial_screen)
         user_journey_length = randint(2, 15)
         journey = [random_start_screen]
+        actions = [*self.__generate_actions_on_screen(journey[0])]
         for i in range(1, user_journey_length):
-            curr_screen = journey[i - 1]
             prev_screen = journey[i - 2] if i >= 2 else None
-            next_possible_screen_weighted_ids = curr_screen.get('can_go_to', [])
+            curr_screen = journey[i - 1]
+            last_action = {}
+            if 1 <= i < len(actions):
+                last_action = actions[i - 1]
+
+            action_navigation_screen_id = last_action.get('navigates_to', None)
+            if action_navigation_screen_id is not None:
+                screen_to_navigate_on_action = self.__get_screen_by_id(action_navigation_screen_id)
+                if screen_to_navigate_on_action:
+                    journey.append()
+                continue
+
+            next_possible_screen_weighted_ids = curr_screen.get('can_go_to', []).copy()
             if prev_screen:
                 next_possible_screen_weighted_ids.append([prev_screen['id'], 20])
 
@@ -52,7 +64,6 @@ class DataGenerator:
 
     def __generate_actions_on_screen(self, screen):
         actions = screen.get('actions', [])
-        # print(actions)
         if len(actions) == 0:
             return actions
         return [choice(actions)]
@@ -60,6 +71,7 @@ class DataGenerator:
     def run(self):
         for user in self.__users:
             session, actions = self.__generate_session(user.get('id', None))
+            print(session)
             print(actions)
 
 
