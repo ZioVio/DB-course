@@ -1,21 +1,18 @@
 import utils
 from random import choice, randint
+from numpy import random
+from db import sessions_repo
+from faker import Faker
+import uuid
 
+USERS_COUNT = 5000
 
 class DataGenerator:
-    def __init__(self):
-        self.__screens = utils.read_json('./screens.json')
-        self.__users = utils.read_json('./users.json')
-        self.__courses = utils.read_json('./courses.json')
-        # self.generator_fns_map = {
-        #     'RANDOM_COURSE_ID': lambda: self.__get_random_course_id(),
-        # }
 
-    def __get_random_course_id(self, user_id):
-        found_users = [user for user in self.__users if user['id'] == user_id]
-        if len(found_users) == 0:
-            return None
-        return choice(found_users[0]['courses'])
+    def __init__(self):
+        self.__fake = Faker()
+        self.__screens = utils.read_json('./screens.json')
+        self.__courses = utils.read_json('./courses.json')
 
     def __get_screen_by_id(self, screen_id):
         for screen in self.__screens:
@@ -23,10 +20,10 @@ class DataGenerator:
                 return screen
         return None
 
-    def __generate_session(self, user_id):
+    def __generate_session(self):
         possible_initial_screen = [screen for screen in self.__screens if screen.get('can_be_initial', False)]
         random_start_screen = choice(possible_initial_screen)
-        user_journey_length = randint(2, 15)
+        user_journey_length = randint(2, 12)
         journey = [random_start_screen]
         actions = [*self.__generate_actions_on_screen(journey[0])]
         for i in range(1, user_journey_length):
@@ -56,11 +53,10 @@ class DataGenerator:
                 next_screen_id = utils.weighted_choice(next_possible_screen_weighted_ids)
                 journey.append(self.__get_screen_by_id(next_screen_id))
 
-        actions = []
         for screen in journey:
-            actions.extend(self.__generate_actions_on_screen(screen))
+            screen['actions'] = self.__generate_actions_on_screen(screen)
 
-        return journey, actions
+        return journey
 
     def __generate_actions_on_screen(self, screen):
         actions = screen.get('actions', [])
@@ -68,12 +64,27 @@ class DataGenerator:
             return actions
         return [choice(actions)]
 
-    def run(self):
-        for user in self.__users:
-            session, actions = self.__generate_session(user.get('id', None))
-            print(session)
-            print(actions)
+    def generate_sessions(self, count=USERS_COUNT):
+        return [self.generate_session() for _ in range(count)]
 
 
-datagen = DataGenerator()
-datagen.run()
+    def generate_session(self):
+        session = self.__generate_session()
+        session_data = {
+            'user_id': uuid.uuid4(),
+            'screens': [],
+        }
+        for screen in session:
+            session_data['screens'].append({
+                'screen_id': screen['id'],
+                'screen_name': screen['name'],
+                'screen_time': random.normal(loc=6000, scale=5000),
+                'actions': screen['actions']
+            })
+        return session_data
+
+
+if __name__ == '__main__':
+    datagen = DataGenerator()
+    sessions = datagen.generate_sessions()
+    print(sessions)
