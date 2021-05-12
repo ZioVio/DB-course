@@ -71,7 +71,7 @@ class DataGenerator:
     def generate_session(self):
         session = self.__generate_session()
         session_data = {
-            'user_id': uuid.uuid4(),
+            'user_id': str(uuid.uuid4()),
             'screens': [],
         }
         for screen in session:
@@ -87,4 +87,7 @@ class DataGenerator:
 if __name__ == '__main__':
     datagen = DataGenerator()
     sessions = datagen.generate_sessions()
+    for session in sessions:
+        sessions_repo.insert(session)
+
     print(sessions)
