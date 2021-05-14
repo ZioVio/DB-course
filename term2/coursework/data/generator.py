@@ -1,20 +1,26 @@
 import utils
 from random import choice, randint
 from numpy import random
-from db import sessions_repo
 from faker import Faker
 import uuid
+from math import fabs
+
+from db import sessions_repo
+import os
+from pathlib import Path
 
 USERS_COUNT = 5000
 
+SCREENS_FILEPATH = os.path.join(os.path.dirname(Path(__file__).absolute()), './screens.json')
+COURSES_FILEPATH = os.path.join(os.path.dirname(Path(__file__).absolute()), './courses.json')
 class DataGenerator:
 
     def __init__(self):
         self.__fake = Faker()
-        self.__screens = utils.read_json('./screens.json')
-        self.__courses = utils.read_json('./courses.json')
+        self.__screens = utils.read_json(SCREENS_FILEPATH)
+        self.__courses = utils.read_json(COURSES_FILEPATH)
 
-    def __get_screen_by_id(self, screen_id):
+    def get_screen_by_id(self, screen_id):
         for screen in self.__screens:
             if screen_id == screen.get('id', None):
                 return screen
@@ -35,7 +41,7 @@ class DataGenerator:
 
             action_navigation_screen_id = last_action.get('navigates_to', None)
             if action_navigation_screen_id is not None:
-                screen_to_navigate_on_action = self.__get_screen_by_id(action_navigation_screen_id)
+                screen_to_navigate_on_action = self.get_screen_by_id(action_navigation_screen_id)
                 if screen_to_navigate_on_action:
                     journey.append()
                 continue
@@ -51,7 +57,7 @@ class DataGenerator:
                     break
             else:
                 next_screen_id = utils.weighted_choice(next_possible_screen_weighted_ids)
-                journey.append(self.__get_screen_by_id(next_screen_id))
+                journey.append(self.get_screen_by_id(next_screen_id))
 
         for screen in journey:
             screen['actions'] = self.__generate_actions_on_screen(screen)
@@ -76,9 +82,9 @@ class DataGenerator:
         }
         for screen in session:
             session_data['screens'].append({
-                'screen_id': screen['id'],
-                'screen_name': screen['name'],
-                'screen_time': random.normal(loc=6000, scale=5000),
+                'id': screen['id'],
+                'name': screen['name'],
+                'time': fabs(random.normal(loc=6000, scale=5000)),
                 'actions': screen['actions']
             })
         return session_data
