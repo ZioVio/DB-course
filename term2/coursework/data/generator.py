@@ -95,5 +95,3 @@ if __name__ == '__main__':
     sessions = datagen.generate_sessions()
     for session in sessions:
         sessions_repo.insert(session)
-
-    print(sessions)

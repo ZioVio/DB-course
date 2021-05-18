@@ -76,7 +76,6 @@ def get_most_frequent_actions_within_screens(sessions):
                 counts_map[screen['id']] = {}
             counts_map[screen['id']]['count'] = screen_count + 1
             actions_count_map = counts_map[screen['id']].get('actions_counts_map', {})
-            print(counts_map[screen['id']])
             counts_map[screen['id']]['actions_counts_map'] = actions_count_map
             for action in screen['actions']:
                 action_count = actions_count_map.get(action['name'], 0)
