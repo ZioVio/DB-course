@@ -1,11 +1,3 @@
-# чаще всего и дольше всего - график и анализ топ - TODO GRAPHIC
-# самый частый первый екран TODO GRAPHIC OR CONSOLE
-# самый частый екшен и его екран - TODO together with next
-# название скрина и процент екшенов, что на нем происходят. таким образом понять TODO LIKE PREV
-# нужен ли этот екшен на этом скрине вообще
-
-# СДЕЛАТЬ ВСЕ НА МАСИВАХ ПРОСТЫХ И ЕСЛИ УСПЕЮ ТО ПЕРЕДЕЛАТЬ НА numpy и pandas
-
 from data.generator import DataGenerator
 
 datagen = DataGenerator()
