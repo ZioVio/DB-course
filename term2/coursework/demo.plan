@@ -1,35 +1,33 @@
-Своєчасність подання ТЗ +
-
-Засоби попередньої обробки (генерування та фільтрація даних)
-    - Показать реализацию генератора
-
-Масштабування (шардінг) даних (включно із демонстрацією на двох вузлах) +
-    - показать, что у меня есть статус, что все шардитса +
-    - показать скрины этого, возможно запустить команды +
-    - показать ссылку, откуда я брал гайд для шардинга +
-        https://habr.com/ru/post/217393/ +
-    - сказать, что честно хз почему не работает, но к сожелению не было времени разбиратся с этим барахлом +
-
-Реплікація даних +
-    - Показать мастера и слейва до и после репликации (27001 и 27002) +
-    - https://linux-notes.org/replikatsiya-v-mongodb/
+DEMO PLAN
+1. SHOW GENERATION
+    - show db before
+    - show db after
+2. SHOW ANALYSIS
+    - stats.py
+    - main.py
+3. REPLICATION
+    - mongo --port 27001
+    - mongo --port 27002
     mongodb://localhost:27002/?readPreference=secondary&appname=MongoDB%20Compass&ssl=false
     mongodb://localhost:27001/?readPreference=primary&appname=MongoDB%20Compass&ssl=false
-
-Засоби статистичного аналізу даних
-    -
-
-Засоби резервування/відновлення даних
+4. SHARDING
+    - guide used https://habr.com/ru/post/217393/
+    - db.printShardingStatus() (on server 27006)
+5. RESERVATION/DATA RESTORE
     - https://docs.mongodb.com/manual/tutorial/backup-and-restore-tools/
+    - mongodump --host=localhost --port=27006 --out=./data/backup
+    - use db-coursework
+    - db.sessions.count({})
+    - generate data
+    - db.sessions.count({})
+    - db.sessions.remove({})
+    - remove config dir
+    - mongorestore --port=27006 ./data/backup
+    - db.sessions.count({})
+6. VISUALS
+    - just show graphics
 
-Використання наукових бібліотек
-    -
+ROUND!!
 
-Оформлення роботи
-    -
 
-Своєчасність захисту роботи
-    -
 
-Засоби візуалізації результатів роботи (графіки, діаграми тощо)
-    -
